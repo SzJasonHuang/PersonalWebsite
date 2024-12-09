@@ -1,8 +1,139 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+    }
+    .portfolio-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      padding: 20px;
+    }
+    .portfolio-item {
+      width: calc(33.333% - 32px);
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .portfolio-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .portfolio-item h3 {
+      margin: 16px;
+      font-size: 1.2rem;
+    }
+    .portfolio-item p {
+      margin: 0 16px 16px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: #fff;
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      .portfolio-item {
+        width: calc(50% - 32px);
+      }
+    }
+    @media (max-width: 480px) {
+      .portfolio-item {
+        width: calc(100% - 32px);
+      }
+    }
+  </style>
 </head>
 <body>
-    <p>Jason's arts</p>
+  <header>
+    <h1>Jason's Art Portfolio</h1>
+    <p>Showcasing creativity through visual arts</p>
+  </header>
+
+  <main>
+    <div class="portfolio-container">
+      <div class="portfolio-item">
+        <img src="./images/my_hand.png" alt="Art Piece 1">
+        <h3>Casted Hand</h3>
+        <p>Reach, Accu-Cast, LiquiStone, 3.5 inches x 3.5 inches x 6.2 inches, Jason Huang, Lakefield, Canada
+</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="./images/Elephant_Logo.png" alt="Art Piece 2">
+        <h3>Elephant's Asian Adventure</h3>
+        <p>Jason Huang, Lakefield Ontario Canada 
+            Digital (Adobe Illustrator), On A4-sized paper
+            2022.10.05</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="./images/GooDKIDMADCIty.png" alt="Art Piece 3">
+        <h3>Good Kid, m.A.A.d City</h3>
+        <p>Jason Huang, Canada
+            Collage on 9 x 12 inches paper
+            Lakefield, ON April 21, 2022</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="./images/Dumplings.png" alt="Art Piece 4">
+        <h3>Non-Edible Dumpings</h3>
+        <p>Jason Huang, Lakefield Ontario Canada
+            Glazed Pottery 8 cm x 8 cm x 2 cm
+            2022.10.12</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="./images/ID_Jason.png" alt="Art Piece 5">
+        <h3>My Identity</h3>
+        <p>Jason Huang, Canada
+            Acrylic Paint, 12" x 16" Wooden Frame Canvas, Black Fine Liner
+            Lakefield, ON, June 18, 2024</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="./images/Screenshot 2024-12-09 000012.png" alt="Art Piece 6">
+        <h3>Landscape Painting</h3>
+        <p>Jason Huang, Canada
+            Acrylic paint on 8 x 10 Inches Wooden Canvas 
+            Lakefield, ON Jan 16, 2024
+            </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Jason Huang. All rights reserved.</p>
+  </footer>
 </body>
+</html>
